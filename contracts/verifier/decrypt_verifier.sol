@@ -27,60 +27,60 @@ contract DecryptVerifier {
     uint256 constant q   = 21888242871839275222246405745257275088696311157297823662689037894645226208583;
 
     // Verification Key data
-    uint256 constant alphax  = 14378794661994809316668936077887579852844330409586136188493910229510707683568;
-    uint256 constant alphay  = 19007180918058273234125706522281291487787880146734549337345180962710738215208;
-    uint256 constant betax1  = 5920706861016946300912146506670818945013737603659177373891149557636543490740;
-    uint256 constant betax2  = 12055325713222300848813253111985210672218263044214498326157766255150057128762;
-    uint256 constant betay1  = 9700420230412290932994502491200547761155381189822684608735830492099336040170;
-    uint256 constant betay2  = 14277278647337675353039880797101698215986155900184787257566473040310971051502;
+    uint256 constant alphax  = 20491192805390485299153009773594534940189261866228447918068658471970481763042;
+    uint256 constant alphay  = 9383485363053290200918347156157836566562967994039712273449902621266178545958;
+    uint256 constant betax1  = 4252822878758300859123897981450591353533073413197771768651442665752259397132;
+    uint256 constant betax2  = 6375614351688725206403948262868962793625744043794305715222011528459656738731;
+    uint256 constant betay1  = 21847035105528745403288232691147584728191162732299865338377159692350059136679;
+    uint256 constant betay2  = 10505242626370262277552901082094356697409835680220590971873171140371331206856;
     uint256 constant gammax1 = 11559732032986387107991004021392285783925812861821192530917403151452391805634;
     uint256 constant gammax2 = 10857046999023057135944570762232829481370756359578518086990519993285655852781;
     uint256 constant gammay1 = 4082367875863433681332203403145435568316851327593401208105741076214120093531;
     uint256 constant gammay2 = 8495653923123431417604973247489272438418190587263600148770280649306958101930;
-    uint256 constant deltax1 = 19133256127707975950691487792451177362565994283806060741327347032806959261921;
-    uint256 constant deltax2 = 12594050201927194728935013198382868710096766024870573161837432117376274142958;
-    uint256 constant deltay1 = 5020265124747710802123789284081723412845598094160521887960172071062583109047;
-    uint256 constant deltay2 = 17174637232039909600979373933534686019562408911886417431413256310520620233064;
+    uint256 constant deltax1 = 9180249829974074694978085615959890801351274467017831287821479986291487956845;
+    uint256 constant deltax2 = 15684220856133108535771194976255110114343786557448147775170665632161257498597;
+    uint256 constant deltay1 = 16216274475145874673072108717844742714735052718521129166374895618763122840315;
+    uint256 constant deltay2 = 3954702491578418028420858069025296649418199435808674031286135360705097363877;
 
     
-    uint256 constant IC0x = 5932026459382860604309440879316683197022918149003360191294155741233703232289;
-    uint256 constant IC0y = 10190564836545696514491179333959855931734797168140754412925505292086287456157;
+    uint256 constant IC0x = 21742983616761885656736058194689192089402494953363310534564091829172452322315;
+    uint256 constant IC0y = 10107138878624973060629524316471152994587727978670853819852022878743952658884;
     
-    uint256 constant IC1x = 18867335583493634013472831141177954825293424828688421198228525342030670068104;
-    uint256 constant IC1y = 15381268465466397414659863328587624695240059970282915771760871594047824107403;
+    uint256 constant IC1x = 2356548366774318003103049455044356486495758144197194473765992549719978810344;
+    uint256 constant IC1y = 13546286166277014073764770164366780677965704088408541669841800835181757550850;
     
-    uint256 constant IC2x = 11286506025338942578952255893420408569906554872704554862467620266108132264197;
-    uint256 constant IC2y = 2491405715760472509167562261482717498704059700756396771077313263264637414832;
+    uint256 constant IC2x = 5456793293951805067121464739286375784924662853009444910123017915423686835915;
+    uint256 constant IC2y = 4426463345464623340615659349808368648455135482836115198295756144514530939352;
     
-    uint256 constant IC3x = 3287473577425372258045407890427028857264800329136703662219819676329065521491;
-    uint256 constant IC3y = 8621055055780158700687294516025314839109090879823278356759396109602531212398;
+    uint256 constant IC3x = 323903022487748310232479468309611994509622749547872746217716497068874711543;
+    uint256 constant IC3y = 11529782920345838131361276447797250085311872332212117432931512987856872865029;
     
-    uint256 constant IC4x = 13486231092071464017060066625879173946215137105871834475708368644662546379148;
-    uint256 constant IC4y = 21121436964731053158654352717071962384336756797046584661227286306159111031971;
+    uint256 constant IC4x = 16283565673898007943741170350940968838711438169392587258005232990007161264500;
+    uint256 constant IC4y = 2163694807920156780185675347104980173659455328410146493536072025684457278713;
     
-    uint256 constant IC5x = 14109275663321771783314980339181158967602422131270775459802129831737860909306;
-    uint256 constant IC5y = 16924660254912023791796764707642347850615242421495467769065197379355986460351;
+    uint256 constant IC5x = 19963886387952581836166379492332064588659180537776614190066665384792259940255;
+    uint256 constant IC5y = 20899092030569882064504638127429546686715881382186258353446523533988783103416;
     
-    uint256 constant IC6x = 3419883549205188749055793320564337243174009629574444717611782109291182659583;
-    uint256 constant IC6y = 4382834526475882549762033295157581547532804093976887401310358307095345650082;
+    uint256 constant IC6x = 1430167710713028909933002857000264857937501621997129287631878012089278260683;
+    uint256 constant IC6y = 15795751707547150072285223806366714530417488189946703571233906617339836550494;
     
-    uint256 constant IC7x = 3223962897746138668639029759885991824463607401137866309854517055540083501524;
-    uint256 constant IC7y = 16082885970618257756451494366838606402295679026944717495804110892597399020825;
+    uint256 constant IC7x = 12211992193319135784972744773328008947270008810975001104556974277299942160396;
+    uint256 constant IC7y = 1903526971972001306578192364428430037715004509704627956770705433504747438503;
     
-    uint256 constant IC8x = 8913096594893157129832389718939680598171595295898154761061549479290918885343;
-    uint256 constant IC8y = 743871532215761266358119443417771343521019768458421024672232959183096442227;
+    uint256 constant IC8x = 6374869296136993233257767615084074477763387894014921075092420528511305485707;
+    uint256 constant IC8y = 7717697774220196010919614804510119171008733687988834881633757996473483683113;
     
  
     // Memory data
     uint16 constant pVk = 0;
-    uint16 constant pDecryptPairing = 128;
+    uint16 constant pPairing = 128;
 
     uint16 constant pLastMem = 896;
 
     function verifyProof(uint[2] calldata _pA, uint[2][2] calldata _pB, uint[2] calldata _pC, uint[] calldata _pubSignals) public view returns (bool) {
         assembly {
             function checkField(v) {
-                if iszero(lt(v, q)) {
+                if iszero(lt(v, r)) {
                     mstore(0, 0)
                     return(0, 0x20)
                 }
@@ -112,8 +112,8 @@ contract DecryptVerifier {
                 }
             }
 
-            function checkDecryptPairing(pA, pB, pC, pubSignals, pMem) -> isOk {
-                let _pDecryptPairing := add(pMem, pDecryptPairing)
+            function checkPairing(pA, pB, pC, pubSignals, pMem) -> isOk {
+                let _pPairing := add(pMem, pPairing)
                 let _pVk := add(pMem, pVk)
 
                 mstore(_pVk, IC0x)
@@ -139,50 +139,50 @@ contract DecryptVerifier {
                 
 
                 // -A
-                mstore(_pDecryptPairing, calldataload(pA))
-                mstore(add(_pDecryptPairing, 32), mod(sub(q, calldataload(add(pA, 32))), q))
+                mstore(_pPairing, calldataload(pA))
+                mstore(add(_pPairing, 32), mod(sub(q, calldataload(add(pA, 32))), q))
 
                 // B
-                mstore(add(_pDecryptPairing, 64), calldataload(pB))
-                mstore(add(_pDecryptPairing, 96), calldataload(add(pB, 32)))
-                mstore(add(_pDecryptPairing, 128), calldataload(add(pB, 64)))
-                mstore(add(_pDecryptPairing, 160), calldataload(add(pB, 96)))
+                mstore(add(_pPairing, 64), calldataload(pB))
+                mstore(add(_pPairing, 96), calldataload(add(pB, 32)))
+                mstore(add(_pPairing, 128), calldataload(add(pB, 64)))
+                mstore(add(_pPairing, 160), calldataload(add(pB, 96)))
 
                 // alpha1
-                mstore(add(_pDecryptPairing, 192), alphax)
-                mstore(add(_pDecryptPairing, 224), alphay)
+                mstore(add(_pPairing, 192), alphax)
+                mstore(add(_pPairing, 224), alphay)
 
                 // beta2
-                mstore(add(_pDecryptPairing, 256), betax1)
-                mstore(add(_pDecryptPairing, 288), betax2)
-                mstore(add(_pDecryptPairing, 320), betay1)
-                mstore(add(_pDecryptPairing, 352), betay2)
+                mstore(add(_pPairing, 256), betax1)
+                mstore(add(_pPairing, 288), betax2)
+                mstore(add(_pPairing, 320), betay1)
+                mstore(add(_pPairing, 352), betay2)
 
                 // vk_x
-                mstore(add(_pDecryptPairing, 384), mload(add(pMem, pVk)))
-                mstore(add(_pDecryptPairing, 416), mload(add(pMem, add(pVk, 32))))
+                mstore(add(_pPairing, 384), mload(add(pMem, pVk)))
+                mstore(add(_pPairing, 416), mload(add(pMem, add(pVk, 32))))
 
 
                 // gamma2
-                mstore(add(_pDecryptPairing, 448), gammax1)
-                mstore(add(_pDecryptPairing, 480), gammax2)
-                mstore(add(_pDecryptPairing, 512), gammay1)
-                mstore(add(_pDecryptPairing, 544), gammay2)
+                mstore(add(_pPairing, 448), gammax1)
+                mstore(add(_pPairing, 480), gammax2)
+                mstore(add(_pPairing, 512), gammay1)
+                mstore(add(_pPairing, 544), gammay2)
 
                 // C
-                mstore(add(_pDecryptPairing, 576), calldataload(pC))
-                mstore(add(_pDecryptPairing, 608), calldataload(add(pC, 32)))
+                mstore(add(_pPairing, 576), calldataload(pC))
+                mstore(add(_pPairing, 608), calldataload(add(pC, 32)))
 
                 // delta2
-                mstore(add(_pDecryptPairing, 640), deltax1)
-                mstore(add(_pDecryptPairing, 672), deltax2)
-                mstore(add(_pDecryptPairing, 704), deltay1)
-                mstore(add(_pDecryptPairing, 736), deltay2)
+                mstore(add(_pPairing, 640), deltax1)
+                mstore(add(_pPairing, 672), deltax2)
+                mstore(add(_pPairing, 704), deltay1)
+                mstore(add(_pPairing, 736), deltay2)
 
 
-                let success := staticcall(sub(gas(), 2000), 8, _pDecryptPairing, 768, _pDecryptPairing, 0x20)
+                let success := staticcall(sub(gas(), 2000), 8, _pPairing, 768, _pPairing, 0x20)
 
-                isOk := and(success, mload(_pDecryptPairing))
+                isOk := and(success, mload(_pPairing))
             }
 
             let pMem := mload(0x40)
@@ -210,7 +210,7 @@ contract DecryptVerifier {
             
 
             // Validate all evaluations
-            let isValid := checkDecryptPairing(_pA, _pB, _pC, _pubSignals.offset, pMem)
+            let isValid := checkPairing(_pA, _pB, _pC, _pubSignals.offset, pMem)
 
             mstore(0, isValid)
              return(0, 0x20)

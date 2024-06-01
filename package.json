@@ -10,11 +10,19 @@
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.4"
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.13",
+    "chai": "^4.4.1",
+    "hardhat": "^2.22.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@openzeppelin/contracts": "^5.0.2",
-    "@semaphore-protocol/proof": "^4.0.0-beta.11"
+    "@semaphore-protocol/proof": "^2.6.1",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.0"
   }
 }
